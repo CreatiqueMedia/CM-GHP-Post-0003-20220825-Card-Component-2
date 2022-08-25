@@ -1,17 +1,10 @@
-/* Dark cyan: hsl(158, 36%, 37%)
-- Cream: hsl(30, 38%, 92%)
-
-### Neutral
-
-- Very dark blue: hsl(212, 21%, 14%)
-- Dark grayish blue: hsl(228, 12%, 48%)
-- White: hsl(0, 0%, 100%) */
-
 /* All Univesal Styling Goes At The Top! */
 
 :root {
   --main-bg-color: hsl(30, 38%, 92%);
   --section-2-bg-color: #fff;
+  --main-font: "Montserrat", sans-serif;
+  --section-2-font: "Fraunces", sans-serif;
 }
 
 * {
@@ -30,7 +23,7 @@ img {
 
 body {
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: --main-font;
   background-color: var(--main-bg-color);
   display: flex;
   flex-direction: column;
@@ -99,7 +92,7 @@ body {
 
 .section-2-heading-2,
 .section-2-price {
-  font-family: "Fraunces", sans-serif;
+  font-family: var(--section-2-font);
 }
 
 .section-2-price-list {
